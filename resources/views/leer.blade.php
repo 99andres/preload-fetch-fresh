@@ -150,7 +150,7 @@
                       })
                       .then(datos=>{
                           
-                        if(datos!=""){
+                        if(datos!=""){//gaa
                           setTimeout(() => {
                             $("#cont").load("#contenidoAccion",function(status){
                               if(status=="success"){
