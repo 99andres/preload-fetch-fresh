@@ -18,7 +18,8 @@
                         <div class="btn-group ">
                           
                           <button class="btn btn-danger eliminar" data-numero="{{$item->id}}"><i class="fal fa-trash-alt eliminarInterno" data-numero="{{$item->id}}" ></i></button>
-                          <button class="btn btn-primary" type="button"  data-toggle="modal" data-target="#exa"><i class="far fa-user-edit"></i></button>
+                          <button class="btn btn-primary editar" type="button"  data-toggle="modal" data-target="#exa" data-numero="{{$item->id}}"><i class="far fa-user-edit editarInterno" data-numero="{{$item->id}}"></i></button>
+                          
                         </div>
                       </div>
 

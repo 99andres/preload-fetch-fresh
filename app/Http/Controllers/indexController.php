@@ -33,4 +33,15 @@ class indexController extends Controller
         return view("ver",compact("nombres"));
         
     }
+    function editar(Request $request){
+        $resultados=Nombre::find($request[0]);
+        return $resultados;
+
+    }
+    function gaurdarData(Request $request){
+        dump($request->input());
+        Nombre::where("id",$request->input("identificador"))->update(["nombre"=>$request->input("nombre"),"edad"=>$request->input("edad")]);
+        return "esgtado";
+    }
+
 }

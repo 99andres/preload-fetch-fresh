@@ -25,4 +25,6 @@ Route::get('/',function(){
 Route::post('proceso',[indexController::class,'index']);
 Route::get("leer",[indexController::class,'leer']);
 Route::post("procesandoEliminar",[indexController::class,'eliminar']);
+Route::post("procesandoEditar",[indexController::class,'editar']);
+Route::post("gaurdarData",[indexController::class,'gaurdarData']);
 Route::get("ver",[indexController::class,"ver"]);
